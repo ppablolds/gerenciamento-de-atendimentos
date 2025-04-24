@@ -100,8 +100,16 @@ public class AtendimentoCLI {
         String tipo = scanner.nextLine();
         System.out.print("Nova descrição: ");
         String descricao = scanner.nextLine();
-        System.out.print("Novo status: ");
-        String status = scanner.nextLine();
+        String status;
+        do {
+            util.ValidadorStatus.exibirOpcoes();
+            System.out.print("Novo status: ");
+            status = scanner.nextLine();
+            if (!util.ValidadorStatus.isValido(status)) {
+                System.out.println("Status inválido. Tente novamente.");
+            }
+        } while (!util.ValidadorStatus.isValido(status));
+
 
         boolean sucesso = servico.atualizar(id, nome, tipo, descricao, status);
         System.out.println(sucesso ? "Atendimento atualizado com sucesso!" : "Atendimento não encontrado.");

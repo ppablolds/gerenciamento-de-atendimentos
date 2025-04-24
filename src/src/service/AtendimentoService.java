@@ -35,6 +35,11 @@ public class AtendimentoService {
     }
 
     public boolean atualizar(int id, String nomeCliente, String tipoAtendimento,String descricao, String status) {
+        if (!util.ValidadorStatus.isValido(status)) {
+            System.out.println("Status inválido!");
+            return false;
+        }
+
         Optional<Atendimento> existente = buscarPorId(id);
         if (existente.isPresent()) {
             Atendimento atendimento = existente.get();
