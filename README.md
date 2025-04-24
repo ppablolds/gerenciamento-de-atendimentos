@@ -66,6 +66,14 @@ Novo tipo de atendimento: Suporte Técnico<br />
 Nova descrição: Atualização pendente<br />
 Novo status: Em andamento
 
+### Finalizando um atendimento
+
+ID do atendimento a atualizar: 1<br />
+Novo nome do cliente: João Silva<br />
+Novo tipo de atendimento: Suporte Técnico<br />
+Nova descrição: Atendimento Concluído<br />
+Novo status: Concluído
+
 ---
 
 ## 🌱 Próximos passos

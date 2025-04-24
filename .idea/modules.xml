@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/com.dev/com.dev.iml" filepath="$PROJECT_DIR$/com.dev/com.dev.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/gerenciamento-de-atendimentos.iml" filepath="$PROJECT_DIR$/.idea/gerenciamento-de-atendimentos.iml" />
     </modules>
   </component>
