@@ -36,12 +36,16 @@ O objetivo deste projeto é consolidar o aprendizado em Java e preparar a base p
 1. Clone o repositório (ou baixe como .zip)
 
 ```bash
-git clone https://github.com/seu-usuario/atendimento-cli-java.git
-cd atendimento-cli-java
+git clone https://github.com/ppablolds/gerenciamento-de-atendimentos.git
+cd gerenciamento-de-atendimentos/src
 ```
 
 2. Abra o projeto na sua IDE favorita.
 3. Compile e execute o arquivo Main.java.
+```bash
+javac Main.java
+java Main.java
+```
 4. Use o menu interativo no terminal para manipular os atendimentos.
 
 ---
