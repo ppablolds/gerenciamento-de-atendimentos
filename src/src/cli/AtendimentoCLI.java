@@ -102,13 +102,13 @@ public class AtendimentoCLI {
         String descricao = scanner.nextLine();
         String status;
         do {
-            util.ValidadorStatus.exibirOpcoes();
+            utils.ValidadorStatus.exibirOpcoes();
             System.out.print("Novo status: ");
             status = scanner.nextLine();
-            if (!util.ValidadorStatus.isValido(status)) {
+            if (!utils.ValidadorStatus.isValido(status)) {
                 System.out.println("Status inválido. Tente novamente.");
             }
-        } while (!util.ValidadorStatus.isValido(status));
+        } while (!utils.ValidadorStatus.isValido(status));
 
 
         boolean sucesso = servico.atualizar(id, nome, tipo, descricao, status);
