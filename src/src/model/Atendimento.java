@@ -1,6 +1,7 @@
 package model;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Atendimento {
     private static int contadorId = 1;
@@ -71,13 +72,11 @@ public class Atendimento {
 
     @Override
     public String toString() {
-        return "Atendimento: " +
-                "id=" + id +
-                ", nomeCliente='" + nomeCliente + '\'' +
-                ", tipoAtendimento='" + tipoAtendimento + '\'' +
-                ", dataHora=" + dataHora +
-                ", descricao='" + descricao + '\'' +
-                ", status='" + status + '\'' +
-                '.';
+        return "Atendimento ID: " + id +
+                "\nCliente: " + nomeCliente +
+                "\nTipo: " + tipoAtendimento +
+                "\nData e Hora: " + dataHora.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm")) +
+                "\nDescrição: " + descricao +
+                "\nStatus: " + status + "\n";
     }
 }
