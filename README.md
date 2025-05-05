@@ -78,11 +78,11 @@ Novo status: Concluído
 
 ## 🌱 Próximos passos
 
- - Migrar para aplicação web com Spring Boot 
- - Persistência com banco de dados (MySQL/PostgreSql)
- - Testes unitários com JUnit 
- - Documentação com Swagger 
- - Deploy na nuvem com Render ou Railway
+ - ✅ Migrar para aplicação web com Spring Boot 
+ - ✅ Persistência com banco de dados (MySQL/PostgreSql)
+ - ❌ Testes unitários com JUnit 
+ - ✅ Documentação com Swagger 
+ - ✅ Deploy na nuvem com Render ou Railway
 
 ---
 
